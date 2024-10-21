@@ -1,3 +1,6 @@
+.stack-hero{
+    margin-bottom: 4%;
+}
 .stack-hero h1{
     color: #f6f6f6;
     font-size: 40px;
@@ -9,7 +12,7 @@
     border: 1px solid rgba(255, 255, 255, 0.255);
     padding: 20px;
     border-radius: 20px;
-    margin-bottom: 50px;
+    margin: 0 18% 30px 24%;
 }
 .stack-type h3{
     color: #f7f7f7;
@@ -29,7 +32,6 @@
 .stack-type-grid a{
     margin-top: 10px;
     border: 1px solid transparent;
-    
     border-radius: 8px;
     transition: .3s ease;
 }
