@@ -1,0 +1,328 @@
+.hero, .project, .testimonials, .stack, .about-hero, .project-hero, .service-hero, .stack-hero, .contact-hero{
+    padding: 10% 22% 0;
+}
+.hero{
+    height: 55lvh;
+    margin-bottom: 4%;
+}
+.hero-head{
+    color: #f6f6f6;
+    margin-bottom: 4%;
+}
+.hero-head h1{
+    font-size: 40px;
+    line-height: 100%;
+}
+.hero-head span{
+    color: #858585;
+    font-weight: 600;
+}
+.hero-sub-head p{
+    color: #959595;
+}
+.hero-btn{
+    display: flex;
+    align-items: center;
+    margin-top: 3%;
+}
+.hero-btn a{
+    font-size: 14px;
+    background-color: #2e2e2e;
+    color: #f6f6f6;
+    padding: 8px 24px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    border-radius: 6px;
+    margin-right: 35px;
+    transition: .3s ease;
+}
+.hero-btn a:hover{
+    border-color: #4b4b4b;
+    background-color: #282828;
+    color: #959595;
+}
+.email-container p{
+    display: none;
+}
+.copy-btn {
+    padding: 8px 18px;
+    background-color: transparent;
+    color: #f6f6f6;
+    border: 1px solid #858585;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+.copy-btn i{
+    margin-right: 8px;
+}
+
+.copy-btn:hover {
+    --webkit-backdrop-filter: blur(10px);
+}
+
+.avail-signal{
+    display: flex;
+    width: 200px;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    border-radius: 8px;
+    color: #f6f6f6;
+    font-size: 12px;
+    margin-top: 5%;
+}
+.animated-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+    animation: colorChange 1s infinite alternate;
+}
+.location{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 25px;
+    right: 40px;
+    color: #f6f6f6;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+.location i{
+    color: rgb(52, 195, 135);
+    font-size: 16px;
+    margin-right: 10px;
+
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: black;
+    }
+    100% {
+        background-color: rgb(52, 195, 135);
+    }
+}
+
+/* project */
+.project{
+    height: 55lvh;
+}
+.project #projects{
+    display: grid;
+    grid-template-columns: 48% 48%;
+    gap: 4%;
+}
+.proj{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #F7F7F7;
+}
+
+.img-box{
+    height: 220px;
+    width: 100%;
+    display: flex;
+    place-content: center;
+}
+.img-box img {
+    object-fit: contain;
+    width: 100%;
+}
+.pr2 img{
+    margin: 20px 30px 30px;
+}
+.pr1{
+    background-color: #DCDCDC;
+}
+.pr1 img{
+    padding: 10px 20px 25px;
+}
+.pr2, .pr1, .proj{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.foot{
+    position: absolute;
+    display: flex;
+    bottom: -40px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #2e2e2e;
+    width: 100%;
+    height: 60px;
+    padding: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.foot h4{
+    line-height: 100%;
+    color: white;
+    font-size: 14px;
+}
+.foot p{
+    font-size: 12px;
+    color: #bcbcbc;
+}
+
+/* Testimonials */
+.testimonials{
+    height: 70lvh;
+    margin-top: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+marquee{
+    width: 100%;
+}
+.marquee-mask{
+    overflow: hidden;
+    position: relative;
+    height: 20pc; /* Increased height */
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    padding: 2% 0;
+}
+.marquee-container {
+    display: flex;
+    animation: scroll-left 25s linear infinite;
+}
+
+.marquee-container.right {
+    animation: scroll-right 25s linear infinite;
+}
+
+.marquee-content {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.testimonial{
+    display: inline-flex;
+    flex-direction: column;
+    background-color: #282828;
+    color: #f7f7f7;
+    width: 250px;
+    padding: 15px;
+    border: 1px solid rgba(120, 108, 108, 0.255);
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.testimonial .profile{
+    display: flex;
+    align-items: center;
+    row-gap: 20px;
+}
+.testimonials .profile-pic{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+.profile-details h2{
+    font-size: 16px;
+    line-height: 100%;
+}
+.profile-details p{
+    font-size: 12px;
+}
+.quote{
+    margin-top: -5px;
+    font-size: 13px;
+    max-width: 250px;
+    white-space: wrap;
+}
+.marquee-mask{
+    width: 100%;
+    overflow: hidden;
+}
+.marquee-left{
+    margin-bottom: 6px;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* Stack */
+.stack{
+    height: 65lvh;
+    margin: 8% 0 10%;
+}
+.tools{
+    border: 1px solid rgba(255, 255, 255, 0.255);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    column-gap: 15px;
+    padding: 15px 15px 0;
+}
+.tools a{
+    margin-top: 10px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: .3s ease;
+}
+.tools a:hover{
+    border-color: rgba(100, 100, 100, 0.255);
+    background-color: #232323;
+}
+.tool{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+}
+.tool-logo{
+    display: flex;
+    place-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+.tool-logo img{
+    height: 70%;
+}
+.tool-details h2{
+    line-height: 100%;
+    color: #f7f7f7;
+    font-size: 18px;
+}
+.tool-details p{
+    color: #959595;
+    font-size: 12px;
+}
+.stack-btn{
+    display: flex;
+    place-content: center;
+    align-items: center;
+    grid-column: span 2;
+    height: 40px;
+    background-color: #2e2e2e;
+    color: #F7F7F7;
+}
+.stack-btn:hover{
+    color: #959595;
+}

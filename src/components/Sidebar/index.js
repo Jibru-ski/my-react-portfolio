@@ -3,12 +3,14 @@ import './index.scss'
 import profile from '../../assets/profile.jpeg'
 
 const Sidebar = () => {
+const sidebar = document.getElementById("sidebar");
+
     return (
         <>
         <div class="sidebar" id="sidebar">
             <div>
                 <div class="profile">
-                    <div class="profile-pic"><img src={profile} alt="Profilw"></img></div>
+                    <div class="profile-pic"><img src={profile} alt="Profile"></img></div>
                 <div class="name-title hide">
                     <h3>Jibran Baraka</h3>
                     <p>Jibru-ski</p>
