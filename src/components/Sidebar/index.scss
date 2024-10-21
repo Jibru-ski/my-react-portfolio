@@ -65,6 +65,7 @@ nav{
     display: flex;
     flex-direction: column;
     margin-top: -50px;
+    overflow: hidden;
 
     a.active{
         border-color: #4b4b4b;
@@ -81,6 +82,9 @@ nav{
         font-size: 12px;
         border: 1px solid #4b4b4b;
     }
+}
+.social, .sidebar-head{
+    overflow: hidden;
 }
 .nav-link{
     position: relative;
@@ -131,7 +135,7 @@ nav{
     width: 72px;
     white-space: nowrap;
 
-    .text, .hide{
+    .nav-link span, .hide{
         opacity: 0;
         transition: .3s ease;
     }
