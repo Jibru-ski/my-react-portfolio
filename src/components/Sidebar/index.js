@@ -3,8 +3,7 @@ import './index.scss'
 import profile from '../../assets/profile.jpeg'
 
 const Sidebar = () => {
-const sidebar = document.getElementById("sidebar");
-
+    
     return (
         <>
         <div class="sidebar" id="sidebar">

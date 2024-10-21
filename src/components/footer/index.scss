@@ -1,0 +1,149 @@
+footer{
+    height: 40lvh;
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.125);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3%;
+}
+.clock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    color: #f6f6f6;
+    padding: 20px 40px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    text-align: center;
+    width: 700px; /* Increased width */
+    height: 100px;
+}
+.time {
+    font-size: 60px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    white-space: nowrap;
+}
+.status {
+    font-size: 16px;
+    font-weight: 600;
+}
+.status-contact a{
+    color: #4b4b4b;
+    font-size: 14px;
+    transition: .3s ease;
+}
+.status-contact a:hover{
+    color: #f6f6f6;
+}
+footer p{
+    color: #f7f7f7;
+    font-size: 12px;
+
+}
+
+/* --------------------------------------- About Page -------------------------------------------- */
+
+.about-hero h1{
+    font-size: 40px;
+    color: #f6f6f6;
+    margin: 0 0 20px;
+}
+.about-me h2{
+    color: #f6f6f6;
+}
+.about-me h2 span{
+    color: #858585;
+}
+.about-me p, .about-maliji p{
+    color: #bcbcbc;
+    font-size: 14px;
+}
+.about-me-img{
+    background-color: red;
+    height: 400px;
+    width: inherit;;
+    margin: 7% 0;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.about-me-img img{
+    width: 100%;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #4b4b4b;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -18px;
+    border-radius: 4px;
+}
+
+.timeline-item {
+    padding: 20px;
+    /* background-color: #fff; */
+    border-radius: 8px;
+    position: relative;
+    width: 45%;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #1c1c1c;
+    border: 4px solid #f7f7f7;
+    top: 24px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-item-left {
+    left: 0;
+}
+
+.timeline-item-right {
+    left: 50%;
+}
+
+.timeline-item-right::after {
+    left: -10px;
+}
+
+.timeline-item-left::after {
+    right: -10px;
+}
+
+.timeline-item h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #f6f6f6;
+}
+
+.timeline-item p {
+    font-size: 12px;
+    line-height: 1.6;
+    color: #959595;
+}
+.timeline-item span{
+    color: rgb(52, 195, 135);
+    font-size: 13px;
+    font-weight: 500;
+}

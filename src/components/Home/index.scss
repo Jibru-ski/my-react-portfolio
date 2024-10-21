@@ -1,5 +1,5 @@
 .hero, .project, .testimonials, .stack, .about-hero, .project-hero, .service-hero, .stack-hero, .contact-hero{
-    padding: 10% 22% 0;
+    padding: 10% 18% 0 24%;
 }
 .hero{
     height: 55lvh;
@@ -169,7 +169,7 @@
 
 /* Testimonials */
 .testimonials{
-    height: 70lvh;
+    height: 100lvh;
     margin-top: 8%;
     display: flex;
     flex-direction: column;
@@ -180,21 +180,24 @@ marquee{
     width: 100%;
 }
 .marquee-mask{
+    display: flex;
+    place-content: center;
+    flex-direction: column;
     overflow: hidden;
     position: relative;
-    height: 20pc; /* Increased height */
+    height: 100%;
     width: 100%;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.125);
-    padding: 2% 0;
+    gap: 4%;
 }
 .marquee-container {
     display: flex;
-    animation: scroll-left 25s linear infinite;
+    animation: scroll-left 40s linear infinite;
 }
 
 .marquee-container.right {
-    animation: scroll-right 25s linear infinite;
+    animation: scroll-right 40s linear infinite;
 }
 
 .marquee-content {
@@ -210,7 +213,7 @@ marquee{
     padding: 15px;
     border: 1px solid rgba(120, 108, 108, 0.255);
     border-radius: 10px;
-    margin-right: 10px;
+    margin-right: 15px;
 }
 .testimonial .profile{
     display: flex;
@@ -237,10 +240,6 @@ marquee{
     max-width: 250px;
     white-space: wrap;
 }
-.marquee-mask{
-    width: 100%;
-    overflow: hidden;
-}
 .marquee-left{
     margin-bottom: 6px;
 }
@@ -265,8 +264,7 @@ marquee{
 
 /* Stack */
 .stack{
-    height: 65lvh;
-    margin: 8% 0 10%;
+    height: 100lvh;
 }
 .tools{
     border: 1px solid rgba(255, 255, 255, 0.255);
