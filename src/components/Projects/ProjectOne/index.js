@@ -1,3 +1,4 @@
+
 import projectOne from '../../../assets/projects-imgs/project.gif'
 import ProjectLayout from '../ProjectLayout'
 const ProjectOne = () => {
@@ -9,12 +10,21 @@ const ProjectOne = () => {
 
     return (
         <>
-        <ProjectLayout {...projectdata}>
-            <div className='Additional-content'>
-                <h3>Additional Project One Information</h3>
-                <p>Here you can put more details specific to Project One.</p>
+        <ProjectLayout {...projectdata}></ProjectLayout>
+        <div className='code-used'>
+                <div className='code'>
+                    <i class='bx bxl-html5'></i>
+                    <span>HTML5</span>
+                </div>
+                <div className='code'>
+                    <i class='bx bxl-css3'></i>
+                    <span>CSS3</span>
+                </div>
+                <div className='code'>
+                    <i class='bx bxl-javascript'></i>
+                    <span>JS</span>
+                </div>
             </div>
-        </ProjectLayout>
         </>
     );
 }

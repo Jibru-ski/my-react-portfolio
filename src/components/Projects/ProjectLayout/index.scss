@@ -1,8 +1,23 @@
 .project-layout{
-    height: 100vh;
     padding: 10% 18% 0 24%;
-}
-.project-head h1{
-    font-size: 25px;
     color: #fff;
+}
+
+img{
+    margin-top: 6%;
+    max-width: 500px;
+}
+
+.code-used{
+    display: flex;
+    height: 50px;
+}
+.code{
+    display: flex;
+    align-items: center;
+    
+    i{
+        margin: 0;
+        font-size: 30px;
+    }
 }
