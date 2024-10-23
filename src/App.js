@@ -23,8 +23,8 @@ function App() {
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/stack' element={<Stack/>}/>
         <Route path='/projects'element={<ProjectLayout/>}>
-          <Route path='/projects/project-one' element={<ProjectOne/>}/>
-          <Route path='/projects/project-two' element={<ProjectTwo/>}/>
+          <Route path='project-one' element={<ProjectOne/>}/>
+          <Route path='project-two' element={<ProjectTwo/>}/>
         </Route>
       </Route>
     </Routes>

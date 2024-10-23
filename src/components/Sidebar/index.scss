@@ -102,12 +102,12 @@ nav{
     white-space: nowrap;
     transition: all .3s ease-in;
 
-    :hover{
-        color: #f6f6f6;
-    }
     i{
-        font-size: 20px;
+        font-size: 22px;
     }
+}
+.nav-link:hover{
+    color: #fff;
 }
 
 .identifier{

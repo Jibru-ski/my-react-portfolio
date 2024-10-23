@@ -1,18 +1,16 @@
 import './index.scss'
 
-const ProjectLayout = ({title, description, imageURL}) => {
+const ProjectLayout = ({ title, description, imageURL }) => {
     return(
-        <>
         <section className='project-layout'>
-            <header>
+            <div className='project-head'>
                 <h1>{title}</h1>
-            </header>
+            </div>
             <div className='project-body'>
                 <p>{description}</p>
                 <img src={imageURL} alt='project-image'></img>
             </div>
         </section>
-        </>
     );
 }
 

@@ -23,7 +23,7 @@ const Projects = () => {
                     </div>
                 </div>
             </Link>
-            <Link to='/projects/project-two' class="prj-container">
+            <Link to='/projects/project-one' class="prj-container">
                 <div class="prj-img">
                     <img class="prj-image" src={projects.project2} alt=""></img>
                 </div>
