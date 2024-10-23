@@ -6,7 +6,10 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Services from './components/Services';
 import Contact from './components/Contact';
-import Stack from './components/Stack'
+import Stack from './components/Stack';
+import ProjectLayout from './components/Projects/ProjectLayout';
+import ProjectTwo from './components/Projects/ProjectTwo';
+import ProjectOne from './components/Projects/ProjectOne'
 
 function App() {
   return (
@@ -19,6 +22,10 @@ function App() {
         <Route path='/services' element={<Services/>}/>
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/stack' element={<Stack/>}/>
+        <Route path='/projects'element={<ProjectLayout/>}>
+          <Route path='/projects/project-one' element={<ProjectOne/>}/>
+          <Route path='/projects/project-two' element={<ProjectTwo/>}/>
+        </Route>
       </Route>
     </Routes>
     </>

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React, { useEffect } from 'react';
 import './index.scss';
 
@@ -45,7 +46,7 @@ const Footer = () => {
             <div className="clock">
                 <div className="status-contact">
                     <div id="status" className="status"></div>
-                    <a href="#">Reach out <i className="ri-arrow-right-line arrow-move"></i></a>
+                    <Link to='/contact'>Reach out <i className="ri-arrow-right-line arrow-move"></i></Link>
                 </div>
 
                 <div id="time" className="time"></div>

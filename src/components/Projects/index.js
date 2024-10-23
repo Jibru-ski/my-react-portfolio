@@ -1,5 +1,6 @@
 import './index.scss'
 import * as projects from '../../assets/projects-imgs';
+import { Link } from 'react-router-dom';
 
 const Projects = () => {
     return(
@@ -8,7 +9,7 @@ const Projects = () => {
         <h1>Projects</h1>
         <p>My remarkable projects with memorable experiences.</p>
         <div class="project-wrapper">
-            <a href="#" class="prj-container">
+            <Link to='/projects/project-one' class="prj-container">
                 <div class="prj-img">
                     <img class="prj-image" src={projects.project1} alt=""></img>
                 </div>
@@ -21,8 +22,8 @@ const Projects = () => {
                         <span>2023</span>
                     </div>
                 </div>
-            </a>
-            <a href="#" class="prj-container">
+            </Link>
+            <Link to='/projects/project-two' class="prj-container">
                 <div class="prj-img">
                     <img class="prj-image" src={projects.project2} alt=""></img>
                 </div>
@@ -35,7 +36,7 @@ const Projects = () => {
                         <span>2023</span>
                     </div>
                 </div>
-            </a>
+            </Link>
             <a href="#" class="prj-container">
                 <div class="prj-img">
                     <img class="prj-image" src={projects.project3} alt=""></img>
