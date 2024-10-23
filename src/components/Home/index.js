@@ -37,19 +37,19 @@ const Home = () => {
                     <div class="img-box pr1">
                         <img src={projects.project1} alt=""></img>
                     </div>
-                    <a href="#" class="foot">
+                    <Link to='/projects' class="foot">
                         <h4>HUGS</h4>
                         <p>An e-commerce platform for jackets</p>
-                    </a>
+                    </Link>
                 </div>
                 <div class="proj">
                     <div class="img-box pr2">
                         <img src={projects.project2} alt=""></img>
                     </div>
-                    <a href="#" class="foot">
+                    <Link to='/projects' class="foot">
                         <h4>SHAWDXW</h4>
                         <p>An e-commerce platform for Japanese Tech Wear</p>
-                    </a>
+                    </Link>
                 </div>
             </section>         
         </section>
@@ -151,49 +151,49 @@ const Home = () => {
 <section class="stack" id="stack">
     <h1>Stack: <span>Tools I Use</span></h1>
     <section class="tools glassy-bg">
-        <a href="#" class="tool">
+        <a class="tool">
             <div class="tool-logo"><img src={tools.framer} alt=""></img></div>
             <div class="tool-details">
                 <h2>Framer</h2>
                 <p>Website Builder</p>
             </div>
         </a>
-        <a href="#" class="tool">
+        <a class="tool">
             <div class="tool-logo"><img src={tools.figma} alt=""></img></div>
             <div class="tool-details">
                 <h2>Figma</h2>
                 <p>Design Tool</p>
             </div>
         </a>
-        <a href="#" class="tool">
+        <a class="tool">
             <div class="tool-logo"><img src={tools.notion} alt=""></img></div>
             <div class="tool-details">
                 <h2>Notion</h2>
                 <p>Productivity Tool</p>
             </div>
         </a>
-        <a href="#" class="tool">
+        <a class="tool">
             <div class="tool-logo"><img src={tools.chatgpt} alt=""></img></div>
             <div class="tool-details">
                 <h2>Chatgpt</h2>
                 <p>AI Assistant</p>
             </div>
         </a>
-        <a href="#" class="tool">
+        <a class="tool">
             <div class="tool-logo"><img src={tools.boxicon} alt=""></img></div>
             <div class="tool-details">
                 <h2>Boxicon</h2>
                 <p>Icon Library</p>
             </div>
         </a>
-        <a href="#" class="tool">
+        <a class="tool">
             <div class="tool-logo"><img src={tools.paypal} alt=""></img></div>
             <div class="tool-details">
                 <h2>Paypal</h2>
                 <p>Payment Provider</p>
             </div>
         </a>
-        <a class="stack-btn" href="#">View All</a>
+        <Link class="stack-btn" to='/stack'>View All</Link>
     </section>
 </section></>
 

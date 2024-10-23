@@ -1,5 +1,6 @@
 import './index.scss'
 import Profile from '../../assets/profile.jpeg'
+import { Link } from 'react-router-dom';
 
 const About = () => {
     return (
@@ -49,7 +50,7 @@ const About = () => {
             </div>
         </section>
         <section class="about-tools" id="stack">
-            <a href="#">
+            <Link to ="/stack">
                 <div class="about-stack glassy-bg">
                     <div class="head">
                         <h2>Stacks</h2>
@@ -58,7 +59,7 @@ const About = () => {
                     
                     <p>My technical toolkit includes proficiency in Framer, Figma, HTML, CSS, JavaScript, and various design software like Adobe Photoshop.</p>
                 </div>
-            </a>
+            </Link>
         </section>
         </>
     );
